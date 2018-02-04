@@ -1,0 +1,10 @@
+{
+    "layers" : [10, 17, 2],
+    "functions" : ["tanh", "linear"],
+    "epochs" : 15000,
+    "mb_size" : 1000,
+    "learning_rate" : 0.08,
+    "momentum" : 0.9,
+    "L2" : 0.004,
+    "error" : "mee"
+}

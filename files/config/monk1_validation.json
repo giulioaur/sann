@@ -1,0 +1,10 @@
+{
+    "nets" : [{ "layers" : [17, 3, 1], "functions" : ["relu", "tanh"], "error" : "mse"}],
+    "max_epoch" : [1000],
+    "tau" : [300, 400, 500],
+    "eta" : [[0.3, 0.003], [0.35, 0.0035]],
+    "momentum" : [0.6, 0.5, 0.4],
+    "regularization" : [0],
+    "initializers" : ["random"],
+    "initializersNum" : 5
+}
