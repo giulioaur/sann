@@ -5,8 +5,11 @@ This is a library for a simple neural network, developed as project for the cour
 I will briefly introduce you to my neural network. It could solve all the basic tasks a neural network should solve and I try to make it simple to configure and not to difficult to understand. I try to develop a full customizable network, so a lot of parameters could be tuned as you prefer.
 I developed and tested it only on Linux environment.
 
+### Docs
+The documentation can be found [here](http://giulioaur.com/sann). It has been generated thanks to [Doxygen](http://www.stack.nl/~dimitri/doxygen/).
+
 ### Network
-In instantiating a new network, we have to pass three parameters:
+To create a neural network we have to instantiate a new [Network](http://giulioaur.com/sann/classsann_1_1Network.html) object, passing three parameters:
 * The topology : the shape of the layers.
 * The activation function: the activation function of each layer. For the input layer the activation function is always a linear function and it cannot be modified.
 * The weights initialization: a function for the initialization of the weights. m is the number of the units in the current layer and n the weights for each neuron. The matrix to return must be m x n. 
