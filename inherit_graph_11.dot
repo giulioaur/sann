@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="sann::utility::Stopwatch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsann_1_1utility_1_1Stopwatch.html",tooltip="It is just a stopwatch to keep time for performance&#39;s purposes. "];
+}
