@@ -18,8 +18,7 @@
 
 namespace sann{
 
-/// This class is the interface for the estimators used in the training phase. It needs to monitor the training 
-/// phase wrt data.
+/// This class is the interface for the estimators used in the training phase. It needs to monitor the training phase wrt data.
 /// This class has four important method:
 /// - init: it is called at the beginning of each training iteration.
 /// - stoppingCriteria: return true if the training has to be stop, false otherwise. NB: it is called before init.

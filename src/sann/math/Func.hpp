@@ -20,8 +20,7 @@ namespace sann{
 
 namespace math{
 
-/// This class represent a mathematical function.
-/// For sake of simplicity this class is not templated since all the functions we will use have the same shape.
+/// This class represent a mathematical function used as activation function.
 class Func{
 
 private:

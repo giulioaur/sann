@@ -22,8 +22,7 @@
 
 namespace sann{
 
-/// This is the core class, that represents the Neural Network.
-/// This is the only class the user can interface which.
+/// This is the core class, that represents the whole Neural Network.
 class Network{
 private:
     // ATTRIBUTES

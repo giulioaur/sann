@@ -28,26 +28,28 @@ const double MAX_DOUBLE = std::numeric_limits<double>::max();
 namespace sann{
 
 /// This is the class for the validation phase. It is used to select a model or compute an estimation of the risk.
-/// It exploits grid search and cross validation for a complete validation phase.
+// It exploits grid search and cross validation for a complete validation phase.
 class Validator{
 public:
     //CLASSES
     
-    // Those classes are a base class for Estimators that exploit the early stop criteria. They are abstract
-    // class, so they need to be extended by another class to be instantiated. The aim of this behaviour is to
-    // allow the user to use different kind of error on different model selection. The error is the error computed
-    // during the training, not the loss of the Validator, that is specified on creation.
-    // They will be passed to the training method.
-    // NB: The model selection is better done if the error plotted by those estimator and the one minimized by
-    //     the networks is the same.
+    /**
+    * @brief Those classes are a base class for Estimators that exploit the early stop criteria. They are abstract
+    * class, so they need to be extended by another class to be instantiated. The aim of this behaviour is to
+    * allow the user to use different kind of error on different model selection. The error is the error computed
+    * during the training, not the loss of the Validator, that is specified on creation.
+    * They will be passed to the training method.
+    * NB: The model selection is better done if the error plotted by those estimator and the one minimized by
+    *     the networks is the same.
 
-    // To extends this class the user have to implement three methods: update(), clone() and finalize(). 
-    // The first one is described in the Estimator header file, the second one returns a copy of the Estimator
-    // and is needed to hide the copy constructor, the last one is called right before starting the plot method
-    // (that could not be overrided). 
-    // The attribute errorTreshold could be changed to edit the threshold at which the training error has to 
-    // stop.
-    // Due to speed reason, the plot is done by writing on a file a string with all the csv data.
+    * To extends this class the user have to implement three methods: update(), clone() and finalize(). 
+    * The first one is described in the Estimator header file, the second one returns a copy of the Estimator
+    * and is needed to hide the copy constructor, the last one is called right before starting the plot method
+    * (that could not be overrided). 
+    * The attribute errorTreshold could be changed to edit the threshold at which the training error has to 
+    * stop.
+    * Due to speed reason, the plot is done by writing on a file a string with all the csv data.
+    */
     class TrValidEstimator : public Estimator{
     private:
         bool earlyStop = false;
@@ -87,15 +89,16 @@ public:
         }
     };
     
-    // To implement the early stop criteria, another estimator is introduced for the validation set.
-    // This estimator keep tracks of the error of the validation set, if this error does not decrease after a 
-    // certain number of epochs, the estimator stop the training. To do that it sets the attribute earlyStop
-    // of the training estimator to true.
-    // The three methods update(), clone() and finalize() have to be implemented (read above).
-    // Three attribute could be changed: earlyStep changes the number of step in which earlyStop criteria is 
-    // checked, earlyThreshold changes the number of bad checking has to be done before set earlyStop to true,
-    // errorThreshold is the difference between last saved error and the current one to be sure that we are 
-    // going into overfitting.
+    /** To implement the early stop criteria, another estimator is introduced for the validation set.
+    * This estimator keep tracks of the error of the validation set, if this error does not decrease after a 
+    * certain number of epochs, the estimator stop the training. To do that it sets the attribute earlyStop
+    * of the training estimator to true.
+    * The three methods update(), clone() and finalize() have to be implemented (read above).
+    * Three attribute could be changed: earlyStep changes the number of step in which earlyStop criteria is 
+    * checked, earlyThreshold changes the number of bad checking has to be done before set earlyStop to true,
+    * errorThreshold is the difference between last saved error and the current one to be sure that we are 
+    * going into overfitting.
+    */
     class VdValidEstimator : public Estimator{
     private:
         TrValidEstimator &trEst;
@@ -182,6 +185,10 @@ public:
 
     // STRUCT
 
+    /**
+     * @brief A struct returned by model assesment: it contains the model plus the risk.
+     * 
+     */
     struct container{
         Network model;
         double risk;

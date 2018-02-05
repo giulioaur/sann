@@ -17,7 +17,13 @@
 
 namespace sann{
 
-// DATA STRUCTURE
+/**
+ * @brief This is the struct that represents the dataset to handle. It has three attributes:
+ *         - names : The name of each pattern.
+ *         - inputs : The inputs vector of each pattern.
+ *         - results : The target results of each pattern.
+ * 
+ */
 typedef struct ds{
     std::vector<std::string> names; 
     std::vector<std::vector<double>> inputs;
@@ -58,7 +64,17 @@ typedef struct ds{
     }
 } dataSet;
 
-
+/**
+ * @brief The parameters object. It holds all the settable hyper-parameters:
+ *        - max_epoch: The maximum number of epoch on which train.
+ *        - mb : The mini_batch size (1 = online, inputs_size = stochastic)
+ *        - eta : The learning rate.
+ *        - mi : The momentum term.
+ *        - lambda : The L2 term.
+ *        - update(struct p &par, const size_t epoch) : This function is called every epoch, and the argument
+ *                  are the struct on which it is called and the epoch. This attribute allows to change the 
+ *                  hyperparameters every epoch.
+ */
 typedef struct p{
     std::size_t max_epoch, mb;
     float eta;

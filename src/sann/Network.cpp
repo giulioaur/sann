@@ -25,6 +25,12 @@ using namespace std;
 
 namespace sann{
     // Static variables definition.
+
+    /**
+     * @brief An estimator that does nothing. It can be used when the user wants no monitoring nor adding more
+     *        stopping criteria to the training.
+     * 
+     */
     class NullEst : public Estimator{
         inline void init(std::size_t epoch){ }
 

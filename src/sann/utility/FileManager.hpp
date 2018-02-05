@@ -21,6 +21,7 @@
 
 namespace sann {
 namespace utility {
+	
 /// This class wraps the interaction with the filesystem offering high level methods to interact with it.
 /// It exploits the boost filesystem to manage the folder.
 class FileManager {
