@@ -33,13 +33,14 @@
 
 
 # My ignore
-src/doxygenfile
 .vscode/
 .vscode/launch.json
-build/
-build_debug/
 docs/latex/
 docs/html/
 docs/myLatex/
 docs/
 docs_branch/
+build/
+build_debug/
+src/doxygenfile
+src/sann/constants.h

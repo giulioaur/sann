@@ -9,11 +9,11 @@ endif(NOT CMAKE_BUILD_TYPE)
 #########################DATA SET#########################
 if(NOT DEFINED DATA_SET)
     set(DATA_SET "monk1")
-    set(DATA_FILE "example/monk.cpp")
+    set(DATA_FILE "examples/monk.cpp")
 elseif(${DATA_SET} STREQUAL "monk1" OR ${DATA_SET} STREQUAL "monk2" OR ${DATA_SET} STREQUAL "monk3")
-    set(DATA_FILE "example/monk.cpp")
+    set(DATA_FILE "examples/monk.cpp")
 elseif(${DATA_SET} STREQUAL "cup")
-    set(DATA_FILE "example/cup.cpp")
+    set(DATA_FILE "examples/cup.cpp")
 endif(NOT DEFINED DATA_SET)
 
 #########################DIRECTORIES#########################
