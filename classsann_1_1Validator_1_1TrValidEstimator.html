@@ -71,6 +71,11 @@ $(function() {
 <div class="title">sann::Validator::TrValidEstimator Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Those classes are a base class for Estimators that exploit the early stop criteria. They are abstract class, so they need to be extended by another class to be instantiated. The aim of this behaviour is to allow the user to use different kind of error on different model selection. The error is the error computed during the training, not the loss of the <a class="el" href="classsann_1_1Validator.html" title="This is the class for the validation phase. It is used to select a model or compute an estimation of ...">Validator</a>, that is specified on creation. They will be passed to the training method. NB: The model selection is better done if the error plotted by those estimator and the one minimized by the networks is the same.  
+ <a href="classsann_1_1Validator_1_1TrValidEstimator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Validator_8hpp_source.html">Validator.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sann::Validator::TrValidEstimator:</div>
 <div class="dyncontent">
@@ -141,7 +146,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>error</b> = 1</td><
 double&#160;</td><td class="memItemRight" valign="bottom"><b>errorThreshold</b> = 10e-7</td></tr>
 <tr class="separator:a26369f3f495bc891addfe7afbfede6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Those classes are a base class for Estimators that exploit the early stop criteria. They are abstract class, so they need to be extended by another class to be instantiated. The aim of this behaviour is to allow the user to use different kind of error on different model selection. The error is the error computed during the training, not the loss of the <a class="el" href="classsann_1_1Validator.html" title="This is the class for the validation phase. It is used to select a model or compute an estimation of ...">Validator</a>, that is specified on creation. They will be passed to the training method. NB: The model selection is better done if the error plotted by those estimator and the one minimized by the networks is the same. </p>
+<p>To extends this class the user have to implement three methods: update(), clone() and finalize(). The first one is described in the <a class="el" href="classsann_1_1Estimator.html">Estimator</a> header file, the second one returns a copy of the <a class="el" href="classsann_1_1Estimator.html">Estimator</a> and is needed to hide the copy constructor, the last one is called right before starting the plot method (that could not be overrided). The attribute errorTreshold could be changed to edit the threshold at which the training error has to stop. Due to speed reason, the plot is done by writing on a file a string with all the csv data. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>sann/<a class="el" href="Validator_8hpp_source.html">Validator.hpp</a></li>
 </ul>
 </div><!-- contents -->

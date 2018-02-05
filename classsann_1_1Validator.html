@@ -73,13 +73,18 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This is the class for the validation phase. It is used to select a model or compute an estimation of the risk.  
+ <a href="classsann_1_1Validator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Validator_8hpp_source.html">Validator.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsann_1_1Validator_1_1container.html">container</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct returned by model assesment: it contains the model plus the risk.  <a href="structsann_1_1Validator_1_1container.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsann_1_1Validator_1_1TrValidEstimator.html">TrValidEstimator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Those classes are a base class for Estimators that exploit the early stop criteria. They are abstract class, so they need to be extended by another class to be instantiated. The aim of this behaviour is to allow the user to use different kind of error on different model selection. The error is the error computed during the training, not the loss of the <a class="el" href="classsann_1_1Validator.html" title="This is the class for the validation phase. It is used to select a model or compute an estimation of ...">Validator</a>, that is specified on creation. They will be passed to the training method. NB: The model selection is better done if the error plotted by those estimator and the one minimized by the networks is the same.  <a href="classsann_1_1Validator_1_1TrValidEstimator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsann_1_1Validator_1_1VdValidEstimator.html">VdValidEstimator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,7 +145,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad99dd6258e0446ee2b1a98f7b78343e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is the class for the validation phase. It is used to select a model or compute an estimation of the risk. It exploits grid search and cross validation for a complete validation phase. </p>
+<div class="textblock"><p>This is the class for the validation phase. It is used to select a model or compute an estimation of the risk. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a460d9d8d924990e843ffe34802a72103"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a460d9d8d924990e843ffe34802a72103">&#9670;&nbsp;</a></span>Validator()</h2>
@@ -337,7 +342,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsann_1_1Network.html">sann::Network</a> - The best trained net. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsann_1_1Network.html" title="This is the core class, that represents the whole Neural Network. ">sann::Network</a> - The best trained net. </dd></dl>
 
 </div>
 </div>
@@ -382,7 +387,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsann_1_1Network.html">Network</a> - The best trained net. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsann_1_1Network.html" title="This is the core class, that represents the whole Neural Network. ">Network</a> - The best trained net. </dd></dl>
 
 </div>
 </div>
@@ -441,7 +446,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structsann_1_1Validator_1_1container.html">Validator::container</a> - A struct with the weight and the risk. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structsann_1_1Validator_1_1container.html" title="A struct returned by model assesment: it contains the model plus the risk. ">Validator::container</a> - A struct with the weight and the risk. </dd></dl>
 
 </div>
 </div>
@@ -500,7 +505,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structsann_1_1Validator_1_1container.html">Validator::container</a> <a class="el" href="classsann_1_1Validator.html#a48be5420b3e8907f656b01005667ba9f" title="Select a model and then compute the estimation risk using a test set. ">Validator::selectModelWithRisk</a> - A container with the best trained model and its risk. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structsann_1_1Validator_1_1container.html" title="A struct returned by model assesment: it contains the model plus the risk. ">Validator::container</a> <a class="el" href="classsann_1_1Validator.html#a48be5420b3e8907f656b01005667ba9f" title="Select a model and then compute the estimation risk using a test set. ">Validator::selectModelWithRisk</a> - A container with the best trained model and its risk. </dd></dl>
 
 </div>
 </div>

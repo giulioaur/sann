@@ -71,6 +71,8 @@ $(function() {
 <div class="title">sann::Validator::VdValidEstimator Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Validator_8hpp_source.html">Validator.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sann::Validator::VdValidEstimator:</div>
 <div class="dyncontent">
@@ -135,7 +137,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>accuracy</b></td></
 double&#160;</td><td class="memItemRight" valign="bottom"><b>errorThreshold</b> = 0.2</td></tr>
 <tr class="separator:a83fb51cd910f4f81dc53d892f948db41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>To implement the early stop criteria, another estimator is introduced for the validation set. This estimator keep tracks of the error of the validation set, if this error does not decrease after a certain number of epochs, the estimator stop the training. To do that it sets the attribute earlyStop of the training estimator to true. The three methods update(), clone() and finalize() have to be implemented (read above). Three attribute could be changed: earlyStep changes the number of step in which earlyStop criteria is checked, earlyThreshold changes the number of bad checking has to be done before set earlyStop to true, errorThreshold is the difference between last saved error and the current one to be sure that we are going into overfitting. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>sann/<a class="el" href="Validator_8hpp_source.html">Validator.hpp</a></li>
 </ul>
 </div><!-- contents -->

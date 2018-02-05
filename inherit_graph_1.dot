@@ -5,9 +5,9 @@ digraph "Graphical Class Hierarchy"
   rankdir="LR";
   Node0 [label="sann::Estimator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsann_1_1Estimator.html"];
   Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="sann::NullEst",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsann_1_1NullEst.html"];
+  Node1 [label="sann::NullEst",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsann_1_1NullEst.html",tooltip="An estimator that does nothing. It can be used when the user wants no monitoring nor adding more stop..."];
   Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="sann::Validator::TrValid\lEstimator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsann_1_1Validator_1_1TrValidEstimator.html"];
+  Node2 [label="sann::Validator::TrValid\lEstimator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsann_1_1Validator_1_1TrValidEstimator.html",tooltip="Those classes are a base class for Estimators that exploit the early stop criteria. They are abstract class, so they need to be extended by another class to be instantiated. The aim of this behaviour is to allow the user to use different kind of error on different model selection. The error is the error computed during the training, not the loss of the Validator, that is specified on creation. They will be passed to the training method. NB: The model selection is better done if the error plotted by those estimator and the one minimized by the networks is the same. "];
   Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="sann::Validator::VdValid\lEstimator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsann_1_1Validator_1_1VdValidEstimator.html"];
 }

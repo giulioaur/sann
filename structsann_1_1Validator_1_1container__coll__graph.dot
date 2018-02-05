@@ -4,7 +4,7 @@ digraph "sann::Validator::container"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node1 [label="sann::Validator::container",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" model" ,fontname="Helvetica"];
-  Node2 [label="sann::Network",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsann_1_1Network.html"];
+  Node2 [label="sann::Network",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsann_1_1Network.html",tooltip="This is the core class, that represents the whole Neural Network. "];
   Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nullEstimator" ,fontname="Helvetica"];
   Node3 [label="sann::Estimator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsann_1_1Estimator.html"];
 }

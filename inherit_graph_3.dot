@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="sann::math::Func",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsann_1_1math_1_1Func.html"];
+  Node0 [label="sann::math::Func",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsann_1_1math_1_1Func.html",tooltip="This class represent a mathematical function used as activation function. "];
 }

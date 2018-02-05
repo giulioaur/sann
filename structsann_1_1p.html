@@ -70,6 +70,11 @@ $(function() {
 <div class="title">sann::p Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The parameters object. It holds all the settable hyper-parameters:  
+ <a href="structsann_1_1p.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dataStructures_8h_source.html">dataStructures.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -92,7 +97,17 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>lambda</b></td></tr>
 std::function&lt; void(struct <a class="el" href="structsann_1_1p.html">p</a> &amp;par, const size_t epoch)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>update</b></td></tr>
 <tr class="separator:a0ae73de0a827c84005be8182f100f8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The parameters object. It holds all the settable hyper-parameters: </p>
+<ul>
+<li>max_epoch: The maximum number of epoch on which train.</li>
+<li>mb : The mini_batch size (1 = online, inputs_size = stochastic)</li>
+<li>eta : The learning rate.</li>
+<li>mi : The momentum term.</li>
+<li>lambda : The L2 term.</li>
+<li>update(struct p &amp;par, const size_t epoch) : This function is called every epoch, and the argument are the struct on which it is called and the epoch. This attribute allows to change the hyperparameters every epoch. </li>
+</ul>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>sann/<a class="el" href="dataStructures_8h_source.html">dataStructures.h</a></li>
 </ul>
 </div><!-- contents -->

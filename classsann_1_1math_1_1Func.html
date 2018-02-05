@@ -72,6 +72,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This class represent a mathematical function used as activation function.  
+ <a href="classsann_1_1math_1_1Func.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Func_8hpp_source.html">Func.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for sann::math::Func:</div>
@@ -112,7 +115,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:aaafdc522a83f0823576535d1b53860a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class represent a mathematical function. For sake of simplicity this class is not templated since all the functions we will use have the same shape. </p>
+<div class="textblock"><p>This class represent a mathematical function used as activation function. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae549ecc2f232540c447bb08e50b95e06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae549ecc2f232540c447bb08e50b95e06">&#9670;&nbsp;</a></span>Func()</h2>
@@ -228,7 +231,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="classsann_1_1math_1_1Func.html#ae549ecc2f232540c447bb08e50b95e06">Func</a>(</div><div class="line">        [](<span class="keyword">const</span> <span class="keywordtype">double</span> x) -&gt; <span class="keywordtype">double</span>{</div><div class="line">            <span class="keywordflow">return</span> x;</div><div class="line">        },</div><div class="line">        [](<span class="keyword">const</span> <span class="keywordtype">double</span> x) -&gt; <span class="keywordtype">double</span>{</div><div class="line">            <span class="keywordflow">return</span> 1;</div><div class="line">        }</div><div class="line">    )</div></div><!-- fragment -->
 <p>Returns the linear function. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsann_1_1math_1_1Func.html">Func</a> - The linear function. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsann_1_1math_1_1Func.html" title="This class represent a mathematical function used as activation function. ">Func</a> - The linear function. </dd></dl>
 
 </div>
 </div>
@@ -253,7 +256,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="classsann_1_1math_1_1Func.html#ae549ecc2f232540c447bb08e50b95e06">Func</a>(</div><div class="line">        [](<span class="keyword">const</span> <span class="keywordtype">double</span> x) -&gt; <span class="keywordtype">double</span>{ </div><div class="line">            <span class="keywordflow">return</span> x &gt; 0 ? x : 0;</div><div class="line">        },</div><div class="line">        [](<span class="keyword">const</span> <span class="keywordtype">double</span> x) -&gt; <span class="keywordtype">double</span>{ </div><div class="line">            <span class="keywordflow">return</span> x &gt; 0 ? 1 : 0;</div><div class="line">        }</div><div class="line">    )</div></div><!-- fragment -->
 <p>Returns the relu function. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsann_1_1math_1_1Func.html">Func</a> - The relu function. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsann_1_1math_1_1Func.html" title="This class represent a mathematical function used as activation function. ">Func</a> - The relu function. </dd></dl>
 
 </div>
 </div>
@@ -284,7 +287,7 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsann_1_1math_1_1Func.html">Func</a> - The sigmoid function. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsann_1_1math_1_1Func.html" title="This class represent a mathematical function used as activation function. ">Func</a> - The sigmoid function. </dd></dl>
 
 </div>
 </div>
@@ -309,7 +312,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="classsann_1_1math_1_1Func.html#ae549ecc2f232540c447bb08e50b95e06">Func</a>(</div><div class="line">        [](<span class="keyword">const</span> <span class="keywordtype">double</span> x) -&gt; <span class="keywordtype">double</span>{ </div><div class="line">            <span class="keywordflow">return</span> (2 / (1 + exp(-x * 2))) - 1;</div><div class="line">        },</div><div class="line">        [](<span class="keyword">const</span> <span class="keywordtype">double</span> x) -&gt; <span class="keywordtype">double</span>{ </div><div class="line">            <span class="keywordflow">return</span> 1 - pow((2 / (1 + exp(-x * 2))) - 1, 2);</div><div class="line">        }</div><div class="line">    )</div></div><!-- fragment -->
 <p>Returns the tanh function. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsann_1_1math_1_1Func.html">Func</a> - The tanh function. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsann_1_1math_1_1Func.html" title="This class represent a mathematical function used as activation function. ">Func</a> - The tanh function. </dd></dl>
 
 </div>
 </div>
