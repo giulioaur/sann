@@ -35,7 +35,7 @@ Then to train the net we need three (or more) parameters:
 * The hyperparameters : the hyperparameters with which train.
 
 ```c++
-/* Train the net on 1000 epochs, with mini batch size of 100 (1 = online, numOfPatterns = stochastic),
+/* Train the net on 1000 epochs, with mini batch size of 100 (1 = online, numOfPatterns = batch),
 with learning rate = 0.1, momentum = 0.9 and L2 reg = 0.001. */
 net.train(myDataset, myEstimator, {1000, 100, 0.1, 0.9, 0.001});
 ```
