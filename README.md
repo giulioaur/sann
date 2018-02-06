@@ -4,6 +4,7 @@ This is a library for a simple neural network, developed as project for the cour
 ## Getting Started
 I will briefly introduce you to my neural network. It could solve all the basic tasks a neural network should solve and I try to make it simple to configure and not to difficult to understand. I try to develop a full customizable network, so a lot of parameters could be tuned as you prefer.
 I developed and tested it only on Linux environment.
+I have used [nlohmann::json](https://github.com/nlohmann/json) library for parsing json file.
 
 ### Docs
 The documentation can be found [here](http://giulioaur.com/sann). It has been generated thanks to [Doxygen](http://www.stack.nl/~dimitri/doxygen/).
