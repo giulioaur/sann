@@ -2,8 +2,9 @@
 This is a library for a simple neural network, developed as project for the course of Machine Learning in University of Pisa.
 
 ## Getting Started
-I will briefly introduce you to my neural network. It could solve all the basic tasks a neural network should solve and I try to make it simple to configure and not to difficult to understand. I try to develop a full customizable network, so a lot of parameters could be tuned as you prefer.
-I developed and tested it only on Linux environment.
+I will briefly introduce you to my neural network. It could solve all the basic tasks a neural network should solve and I try to make it simple to configure and not to difficult to understand. I try to develop a full customizable network, so a lot of parameters could be tuned as you prefer.<br/>
+I developed and tested it only on Linux environment.<br/>
+I have used [nlohmann::json](https://github.com/nlohmann/json) library for parsing json file.
 
 ### Docs
 The documentation can be found [here](http://giulioaur.com/sann). It has been generated thanks to [Doxygen](http://www.stack.nl/~dimitri/doxygen/).
@@ -34,7 +35,7 @@ Then to train the net we need three (or more) parameters:
 * The hyperparameters : the hyperparameters with which train.
 
 ```c++
-/* Train the net on 1000 epochs, with mini batch size of 100 (1 = online, numOfPatterns = stochastic),
+/* Train the net on 1000 epochs, with mini batch size of 100 (1 = online, numOfPatterns = batch),
 with learning rate = 0.1, momentum = 0.9 and L2 reg = 0.001. */
 net.train(myDataset, myEstimator, {1000, 100, 0.1, 0.9, 0.001});
 ```
