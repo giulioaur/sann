@@ -26,7 +26,6 @@ int main(int argc, char **argv){
 
     ///////////////////////////////////////CUP DATASET////////////////////////////////////////
     dataSet fullTrainSet = FileManager::readDataSet(FILES_DIR + "dataSet/ML-CUP17-TR.csv", 13, ',', {11, 12}, 0);
-    dataSet fullTestSet = FileManager::readDataSet(FILES_DIR + "dataSet/ML-CUP17-TS.csv", 11, ',', {}, 0);
 
     int testLength = fullTrainSet.inputs.size() * 20 / 100;
 

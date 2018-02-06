@@ -44,3 +44,4 @@ build/
 build_debug/
 src/doxygenfile
 src/sann/constants.h
+files/validation/
