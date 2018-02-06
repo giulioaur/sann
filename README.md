@@ -2,8 +2,8 @@
 This is a library for a simple neural network, developed as project for the course of Machine Learning in University of Pisa.
 
 ## Getting Started
-I will briefly introduce you to my neural network. It could solve all the basic tasks a neural network should solve and I try to make it simple to configure and not to difficult to understand. I try to develop a full customizable network, so a lot of parameters could be tuned as you prefer.
-I developed and tested it only on Linux environment.
+I will briefly introduce you to my neural network. It could solve all the basic tasks a neural network should solve and I try to make it simple to configure and not to difficult to understand. I try to develop a full customizable network, so a lot of parameters could be tuned as you prefer.<br/>
+I developed and tested it only on Linux environment.<br/>
 I have used [nlohmann::json](https://github.com/nlohmann/json) library for parsing json file.
 
 ### Docs
